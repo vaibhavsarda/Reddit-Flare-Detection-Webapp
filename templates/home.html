@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>HOME PAGE</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles.css')}}">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="apptitle">
+				<h1 style="color:green">REDDIT FLARE DETECTOR</h1>
+			</div>
+			<!-- <h2>Flare Detection using Machine Learning</h2> -->
+		</div>
+	</header>
+
+	<div class="ml-container">
+		<form action="{{url_for('predict')}}" method="POST">
+			<p>Enter Link to Reddit Post Here</p>
+			<textarea name="message" rows="4" cols="80"></textarea>
+			<br/>
+			<input type="submit" class="btn-info" value="PREDICT">
+		</form>
+	</div>
+</body>
+</html>
