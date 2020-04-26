@@ -1,6 +1,6 @@
 flask
 praw
 nltk
-pickle
+pickle-mixin
 sklearn
 json
