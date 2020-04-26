@@ -3,4 +3,4 @@ praw
 nltk
 pickle-mixin
 sklearn
-json
+json5
