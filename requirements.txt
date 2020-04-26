@@ -1,0 +1,6 @@
+flask
+praw
+nltk
+pickle
+sklearn
+json
