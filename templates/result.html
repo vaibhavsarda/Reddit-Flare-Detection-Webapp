@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RESULT PAGE</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles.css')}}">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="apptitle">
+				<h2 style="color:blue">Flare Detection Completed</h2>
+			</div>
+			<!-- <h2>Predicted Flare</h2> -->
+		</div>
+	</header>
+	<p style="color:blue;font-size:20,text-align:center;"><b>PREDICTION RESULT</b></p>
+	
+	<div class="results">
+		{% if prediction == 'Scheduled' %}
+		
+		<h2 style="color:white;">Scheduled</h2>
+		
+		{% elif prediction == 'Politics' %}
+		
+		<h2 style="color:white;">Politics</h2>
+		
+		{% elif prediction == 'Photography' %}
+		
+		<h2 style="color:white;">Photography</h2>
+
+		{% elif prediction == 'Police/Economy' %}
+		
+		<h2 style="color:white;">Police/Economy</h2>
+
+		{% elif prediction == 'AskIndia' %}
+		
+		<h2 style="color:white;">AskIndia</h2>
+
+		{% elif prediction == 'Sports' %}
+		
+		<h2 style="color:white;">Sports</h2>
+
+		{% elif prediction == 'Non-Political' %}
+		
+		<h2 style="color:white;">Non-Political</h2>
+
+		{% elif prediction == 'Science/Technology' %}
+		
+		<h2 style="color:white;">Science/Technology</h2>
+
+		{% elif prediction == 'Food' %}
+		
+		<h2 style="color:white;">Food</h2>
+
+		{% elif prediction == 'Business/Finance' %}
+		
+		<h2 style="color:white;">Business/Finance</h2>
+
+		{% elif prediction == 'Coronavirus' %}
+		
+		<h2 style="color:white;">Coronavirus</h2>
+
+		{% elif prediction == 'Unverified' %}
+		
+		<h2 style="color:white;">Unverified</h2>
+
+		{% endif %}
+
+	</div>
+
+</body>
+</html>
